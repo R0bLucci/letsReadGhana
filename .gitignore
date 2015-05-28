@@ -1,7 +1,11 @@
+#Ignore all binary files
 bin
 images
+icon.ico
 obj
 Properties
+
+#Ignore .wav file
 sound
-icon.ico
+
 *.resx

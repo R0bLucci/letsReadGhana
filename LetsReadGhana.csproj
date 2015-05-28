@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEBB209B-6E77-4F75-B04F-C453D138D316}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LetsReadGhana</RootNamespace>
+    <AssemblyName>LetsReadGhana</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>14</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F54DA416CA5D1080157973495F8D0E77EE159367</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LetsReadGhana_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPoints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPoints.Designer.cs">
+      <DependentUpon>frmPoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRules.Designer.cs">
+      <DependentUpon>frmRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimer.Designer.cs">
+      <DependentUpon>frmTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs" />
+    <Compile Include="MyTimer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Score.cs" />
+    <EmbeddedResource Include="frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPoints.resx">
+      <DependentUpon>frmPoints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRules.resx">
+      <DependentUpon>frmRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimer.resx">
+      <DependentUpon>frmTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <Content Include="images\items\ant.png" />
+    <Content Include="images\items\basket.png" />
+    <Content Include="images\items\corn.png" />
+    <Content Include="images\items\drum.png" />
+    <Content Include="images\items\elephant.png" />
+    <Content Include="images\items\fish.png" />
+    <Content Include="images\items\goat.png" />
+    <Content Include="images\items\hat.png" />
+    <Content Include="images\items\insect.png" />
+    <Content Include="images\items\jug.png" />
+    <Content Include="images\items\king.png" />
+    <Content Include="images\items\lamp.png" />
+    <Content Include="images\items\maize.png" />
+    <Content Include="images\items\nuts.png" />
+    <Content Include="images\items\orange.png" />
+    <Content Include="images\items\pencil.png" />
+    <Content Include="images\items\question.png" />
+    <Content Include="images\items\rise.png" />
+    <Content Include="images\items\snake.png" />
+    <Content Include="images\items\table.png" />
+    <Content Include="images\items\umbrella.png" />
+    <Content Include="images\items\village.png" />
+    <Content Include="images\items\wall.png" />
+    <Content Include="images\items\x as in ox.png" />
+    <Content Include="images\items\yam.png" />
+    <Content Include="images\items\zebra.png" />
+    <Content Include="images\letters\a.png" />
+    <Content Include="images\letters\b.png" />
+    <Content Include="images\letters\c.png" />
+    <Content Include="images\letters\d.png" />
+    <Content Include="images\letters\e.png" />
+    <Content Include="images\letters\f.png" />
+    <Content Include="images\letters\g.png" />
+    <Content Include="images\letters\h.png" />
+    <Content Include="images\letters\i.png" />
+    <Content Include="images\letters\j.png" />
+    <Content Include="images\letters\k.png" />
+    <Content Include="images\letters\l.png" />
+    <Content Include="images\letters\m.png" />
+    <Content Include="images\letters\n.png" />
+    <Content Include="images\letters\o.png" />
+    <Content Include="images\letters\p.png" />
+    <Content Include="images\letters\q.png" />
+    <Content Include="images\letters\r.png" />
+    <Content Include="images\letters\s.png" />
+    <Content Include="images\letters\t.png" />
+    <Content Include="images\letters\u.png" />
+    <Content Include="images\letters\v.png" />
+    <Content Include="images\letters\w.png" />
+    <Content Include="images\letters\x.png" />
+    <Content Include="images\letters\y.png" />
+    <Content Include="images\letters\z.png" />
+    <Content Include="sound\a.wav" />
+    <Content Include="sound\b.wav" />
+    <Content Include="sound\c.wav" />
+    <Content Include="sound\d.wav" />
+    <Content Include="sound\e.wav" />
+    <Content Include="sound\f.wav" />
+    <Content Include="sound\g.wav" />
+    <Content Include="sound\h.wav" />
+    <Content Include="sound\i.wav" />
+    <Content Include="sound\j.wav" />
+    <Content Include="sound\k.wav" />
+    <Content Include="sound\l.wav" />
+    <Content Include="sound\m.wav" />
+    <Content Include="sound\n.wav" />
+    <Content Include="sound\o.wav" />
+    <Content Include="sound\p.wav" />
+    <Content Include="sound\q.wav" />
+    <Content Include="sound\r.wav" />
+    <Content Include="sound\s.wav" />
+    <Content Include="sound\t.wav" />
+    <Content Include="sound\u.wav" />
+    <Content Include="sound\v.wav" />
+    <Content Include="sound\w.wav" />
+    <Content Include="sound\x.wav" />
+    <Content Include="sound\y.wav" />
+    <Content Include="sound\z.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
